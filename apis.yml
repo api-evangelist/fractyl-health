@@ -1,8 +1,25 @@
 aid: fractyl-health
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/fractyl-health.png
 name: Fractyl Health
-description: 'Fractyl Health is a company surfaced as a portfolio company of bessemer-venture-partners,
-  general-catalyst and added to the API Evangelist network as a stub for enrichment. Sector: healthcare.
-  This profile is a lead awaiting the enrichment pipeline.'
+description: 'Fractyl Health, Inc. (Nasdaq: GUTS) is a clinical-stage metabolic therapeutics
+  company developing treatments that target the root causes of type 2 diabetes and obesity rather
+  than managing symptoms. Its lead product, Revita, is an outpatient endoscopic procedure that
+  resurfaces the duodenal lining to address a driver of metabolic disease, and Rejuva is an
+  early-stage pancreatic islet-cell gene therapy platform designed for durable, one-time metabolic
+  remission. The company is headquartered in Massachusetts and backed by Bessemer Venture Partners
+  and General Catalyst. Fractyl publishes no public developer API, SDK, or developer portal; this
+  API Evangelist profile tracks its corporate, product, and investor web presence.'
 url: https://raw.githubusercontent.com/api-evangelist/fractyl-health/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Healthcare
+- Biotechnology
+- Metabolic Therapeutics
+- Type 2 Diabetes
+- Obesity
+- Gene Therapy
+- Medical Devices
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +47,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/fractyl-health-domain-security.yml
 - type: Website
   url: https://www.fractyl.com/
+- type: TermsOfService
+  url: https://www.fractyl.com/terms-of-use/
+- type: PrivacyPolicy
+  url: https://www.fractyl.com/privacy-cookie-policy/
+- type: Support
+  url: https://www.fractyl.com/contact/
+- type: InvestorRelations
+  url: https://ir.fractyl.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
